@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#testimonial-slider-ow {
+  @apply relative !pb-[40px];
+}
+
+#testimonial-slider-ow .tns-nav {
+  @apply absolute left-1/2 bottom-0 -translate-x-1/2;
+}
+
+#testimonial-slider-ow .tns-nav button {
+  @apply w-5 h-[3px] bg-[#e1e1e1] ml-2.5;
+}
+
+#testimonial-slider-ow .tns-nav button.tns-nav-active {
+  @apply bg-[#ef476f];
+}
