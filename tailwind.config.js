@@ -7,6 +7,7 @@ module.exports = {
     "./home-page-3.html",
     "./home-page-4.html",
     "./service-1.html",
+    "./service-2.html",
   ],
   theme: {
     screens: {
