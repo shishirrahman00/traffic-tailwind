@@ -45,5 +45,7 @@ if (caseSliderElement) {
     items: 5,
     slideBy: "page",
     autoplay: true,
+    autoplayButtonOutput: false,
+    controls: false,
   });
 }
