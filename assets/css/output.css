@@ -646,10 +646,6 @@ video {
   grid-column-start: 9;
 }
 
-.col-start-7 {
-  grid-column-start: 7;
-}
-
 .col-end-12 {
   grid-column-end: 12;
 }
@@ -701,6 +697,10 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-16 {
@@ -755,6 +755,10 @@ video {
   margin-bottom: 10px;
 }
 
+.mb-\[21px\] {
+  margin-bottom: 21px;
+}
+
 .mb-\[23px\] {
   margin-bottom: 23px;
 }
@@ -805,22 +809,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mb-\[34px\] {
-  margin-bottom: 34px;
-}
-
-.mb-\[21px\] {
-  margin-bottom: 21px;
-}
-
-.mb-\[42px\] {
-  margin-bottom: 42px;
-}
-
-.mb-\[28px\] {
-  margin-bottom: 28px;
 }
 
 .line-clamp-3 {
@@ -1132,16 +1120,6 @@ video {
 
 .gap-y-\[60px\] {
   row-gap: 60px;
-}
-
-.gap-x-\[26px\] {
-  -moz-column-gap: 26px;
-       column-gap: 26px;
-}
-
-.gap-x-\[60px\] {
-  -moz-column-gap: 60px;
-       column-gap: 60px;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1549,6 +1527,10 @@ video {
   padding-bottom: 110px;
 }
 
+.pb-\[112px\] {
+  padding-bottom: 112px;
+}
+
 .pb-\[120px\] {
   padding-bottom: 120px;
 }
@@ -1669,10 +1651,6 @@ video {
   padding-top: 90px;
 }
 
-.pb-\[112px\] {
-  padding-bottom: 112px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1739,6 +1717,10 @@ video {
   font-size: 22px;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
 .text-\[26px\] {
   font-size: 26px;
 }
@@ -1792,10 +1774,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
 }
 
 .font-bold {
@@ -2273,14 +2251,14 @@ video {
   display: flex;
 }
 
-.group:hover .group-hover\:bg-\[\#ef476f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 71 111 / var(--tw-bg-opacity, 1));
-}
-
 .group:hover .group-hover\:bg-\[\#06d6a0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(6 214 160 / var(--tw-bg-opacity, 1));
+}
+
+.group:hover .group-hover\:bg-\[\#ef476f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 71 111 / var(--tw-bg-opacity, 1));
 }
 
 .group:hover .group-hover\:bg-gradient-to-b {
@@ -2410,6 +2388,13 @@ video {
 
   .md\:mr-0 {
     margin-right: 0px;
+  }
+
+  .md\:line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
   }
 
   .md\:flex {
@@ -2741,6 +2726,13 @@ video {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:line-clamp-none {
+    overflow: visible;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: none;
   }
 
   .lg\:flex {
