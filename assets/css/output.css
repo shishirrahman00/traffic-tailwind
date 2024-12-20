@@ -626,20 +626,12 @@ video {
   grid-column-start: 1;
 }
 
-.col-start-10 {
-  grid-column-start: 10;
-}
-
 .col-start-12 {
   grid-column-start: 12;
 }
 
 .col-start-2 {
   grid-column-start: 2;
-}
-
-.col-start-4 {
-  grid-column-start: 4;
 }
 
 .col-start-5 {
@@ -650,12 +642,12 @@ video {
   grid-column-start: 6;
 }
 
-.col-start-7 {
-  grid-column-start: 7;
-}
-
 .col-start-9 {
   grid-column-start: 9;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
 }
 
 .col-end-10 {
@@ -672,10 +664,6 @@ video {
 
 .col-end-2 {
   grid-column-end: 2;
-}
-
-.col-end-4 {
-  grid-column-end: 4;
 }
 
 .col-end-5 {
@@ -823,24 +811,16 @@ video {
   margin-left: 20px;
 }
 
+.ml-\[6px\] {
+  margin-left: 6px;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.ml-\[10px\] {
-  margin-left: 10px;
-}
-
-.ml-\[8px\] {
-  margin-left: 8px;
-}
-
-.ml-\[6px\] {
-  margin-left: 6px;
 }
 
 .line-clamp-3 {
@@ -1057,10 +1037,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .justify-items-center {
@@ -2365,6 +2341,10 @@ video {
     grid-column-start: 2;
   }
 
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+
   .md\:col-start-4 {
     grid-column-start: 4;
   }
@@ -2381,20 +2361,16 @@ video {
     grid-column-start: 7;
   }
 
-  .md\:col-start-13 {
-    grid-column-start: 13;
-  }
-
   .md\:col-start-9 {
     grid-column-start: 9;
   }
 
-  .md\:col-start-3 {
-    grid-column-start: 3;
-  }
-
   .md\:col-end-10 {
     grid-column-end: 10;
+  }
+
+  .md\:col-end-11 {
+    grid-column-end: 11;
   }
 
   .md\:col-end-12 {
@@ -2409,6 +2385,10 @@ video {
     grid-column-end: 2;
   }
 
+  .md\:col-end-5 {
+    grid-column-end: 5;
+  }
+
   .md\:col-end-6 {
     grid-column-end: 6;
   }
@@ -2417,20 +2397,12 @@ video {
     grid-column-end: 7;
   }
 
-  .md\:col-end-5 {
-    grid-column-end: 5;
+  .md\:col-end-8 {
+    grid-column-end: 8;
   }
 
   .md\:col-end-9 {
     grid-column-end: 9;
-  }
-
-  .md\:col-end-11 {
-    grid-column-end: 11;
-  }
-
-  .md\:col-end-8 {
-    grid-column-end: 8;
   }
 
   .md\:mx-auto {
