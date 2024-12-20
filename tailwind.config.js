@@ -9,6 +9,7 @@ module.exports = {
     "./service-1.html",
     "./service-2.html",
     "./service-details.html",
+    "./case-study-1.html",
   ],
   theme: {
     screens: {

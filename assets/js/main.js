@@ -47,5 +47,20 @@ if (caseSliderElement) {
     autoplay: true,
     autoplayButtonOutput: false,
     controls: false,
+    autoplayTimeout: 3000,
+    responsive: {
+      425: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1024: {
+        items: 4,
+      },
+      1170: {
+        items: 5,
+      },
+    },
   });
 }
