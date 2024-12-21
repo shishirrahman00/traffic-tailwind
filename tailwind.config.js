@@ -14,6 +14,7 @@ module.exports = {
     "./case-study-details.html",
     "./blog.html",
     "./blog-single.html",
+    "./about-us.html",
   ],
   theme: {
     screens: {
