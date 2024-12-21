@@ -650,10 +650,6 @@ video {
   grid-column-start: 9;
 }
 
-.col-start-7 {
-  grid-column-start: 7;
-}
-
 .col-end-10 {
   grid-column-end: 10;
 }
@@ -779,6 +775,10 @@ video {
   margin-bottom: 30px;
 }
 
+.mb-\[34px\] {
+  margin-bottom: 34px;
+}
+
 .mb-\[36px\] {
   margin-bottom: 36px;
 }
@@ -825,10 +825,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mb-\[34px\] {
-  margin-bottom: 34px;
 }
 
 .line-clamp-3 {
@@ -1105,6 +1101,11 @@ video {
        column-gap: 50px;
 }
 
+.gap-x-\[60px\] {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
 .gap-x-\[70px\] {
   -moz-column-gap: 70px;
        column-gap: 70px;
@@ -1144,11 +1145,6 @@ video {
 
 .gap-y-\[60px\] {
   row-gap: 60px;
-}
-
-.gap-x-\[60px\] {
-  -moz-column-gap: 60px;
-       column-gap: 60px;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1680,14 +1676,6 @@ video {
   padding-top: 90px;
 }
 
-.pb-\[168px\] {
-  padding-bottom: 168px;
-}
-
-.pb-\[200px\] {
-  padding-bottom: 200px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -2108,14 +2096,14 @@ video {
   --tw-bg-opacity: 0.4;
 }
 
-.after\:bg-opacity-60::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 0.6;
-}
-
 .after\:bg-opacity-50::after {
   content: var(--tw-content);
   --tw-bg-opacity: 0.5;
+}
+
+.after\:bg-opacity-60::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 0.6;
 }
 
 .after\:bg-gradient-to-b::after {
@@ -2584,6 +2572,11 @@ video {
          column-gap: 1.25rem;
   }
 
+  .md\:gap-x-\[0px\] {
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+
   .md\:gap-x-\[20px\] {
     -moz-column-gap: 20px;
          column-gap: 20px;
@@ -2604,6 +2597,11 @@ video {
 
   .md\:gap-y-5 {
     row-gap: 1.25rem;
+  }
+
+  .md\:gap-x-\[30px\] {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2686,6 +2684,10 @@ video {
 
   .md\:text-\[65px\] {
     font-size: 65px;
+  }
+
+  .md\:text-\[19px\] {
+    font-size: 19px;
   }
 }
 
@@ -2993,6 +2995,10 @@ video {
 
   .lg\:text-\[50px\] {
     font-size: 50px;
+  }
+
+  .lg\:text-\[22px\] {
+    font-size: 22px;
   }
 }
 
