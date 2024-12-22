@@ -15,6 +15,7 @@ module.exports = {
     "./blog.html",
     "./blog-single.html",
     "./about-us.html",
+    "./contact-us-1.html",
   ],
   theme: {
     screens: {
