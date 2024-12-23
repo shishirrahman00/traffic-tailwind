@@ -64,3 +64,29 @@ if (caseSliderElement) {
     },
   });
 }
+
+const sidebarMenu = document.querySelector("#sidebar-menu-btn");
+const homepage4Sidebar = document.querySelector("#home-page-4-sidebar");
+const sidebarMenuSearch = document.querySelector("#sidebar-menu-search");
+const homepage4SidebarMenuCLose = document.querySelector(
+  "#home-page-4-menu-close"
+);
+const homepage4SidebarMenuSearch = document.querySelector(
+  "#home-page-4-menu-search"
+);
+if (sidebarMenu) {
+  sidebarMenu.addEventListener("click", () => {
+    homepage4Sidebar.setAttribute("data-state", "open");
+  });
+}
+if (homepage4SidebarMenuCLose) {
+  homepage4SidebarMenuCLose.addEventListener("click", () => {
+    homepage4Sidebar.setAttribute("data-state", "close");
+  });
+}
+
+if (sidebarMenuSearch) {
+  sidebarMenuSearch.addEventListener("click", () => {
+    homepage4SidebarMenuSearch.setAttribute("data-state", "open");
+  });
+}

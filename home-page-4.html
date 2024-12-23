@@ -17,16 +17,133 @@
   <body>
     <!-- HERO-AREA-SECTION-START -->
     <div
+      class="fixed inset-0 w-full h-full bg-[#0c3f50] bg-opacity-85 z-50 data-[state=close]:transform data-[state=close]:scale-75 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform data-[state=open]:scale-100"
+      id="home-page-4-sidebar"
+      data-state="close"
+    >
+      <div
+        class="w-[315px] bg-[#ffffff] h-full z-50 p-10 flex flex-col justify-between"
+      >
+        <div class="flex justify-between">
+          <img src="./assets/img/Logo.png" alt="" class="w-[60px] h-[60px]" />
+          <button
+            class="inline-flex items-center gap-x-2.5"
+            id="home-page-4-menu-close"
+          >
+            <span><i class="fa-solid fa-x text-[#373737] text-sm"></i></span
+            ><span class="text-[15px] text-[#373737] font-light">Close</span>
+          </button>
+        </div>
+
+        <div>
+          <ul class="flex flex-col gap-y-5">
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#373737] font-normal hover:text-[#06d6a0]"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#373737] font-normal hover:text-[#06d6a0]"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#373737] font-normal hover:text-[#06d6a0]"
+                >Case Study</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#373737] font-normal hover:text-[#06d6a0]"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[20px] text-[#373737] font-normal hover:text-[#06d6a0]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-base text-[#373737] mb-8">Get Connected</h3>
+          <div>
+            <ul class="flex flex-wrap gap-x-7 gap-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2.5 text-[15px] text-[#373737] hover:text-[#06d6a0]"
+                  ><i class="fa-brands fa-facebook-f"></i
+                  ><span class="text-[#999999] hover:text-[#06d6a0]"
+                    >Facebook</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2.5 text-[15px] hover:text-[#06d6a0]"
+                  ><i class="fa-brands fa-x-twitter"></i
+                  ><span class="text-[#999999] hover:text-[#06d6a0]"
+                    >Twitter</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2.5 text-[15px] hover:text-[#06d6a0]"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                  ><span class="text-[#999999] hover:text-[#06d6a0]"
+                    >Pinterese</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2.5 text-[15px] hover:text-[#06d6a0]"
+                  ><i class="fa-brands fa-linkedin"></i
+                  ><span class="text-[#999999] hover:text-[#06d6a0]"
+                    >Linkedin</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex items-center gap-x-2.5 text-[15px] hover:text-[#06d6a0]"
+                  ><i class="fa-brands fa-instagram"></i
+                  ><span class="text-[#999999] hover:text-[#06d6a0]"
+                    >Intagram</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
       style="background-image: url(./assets/img/Home-page-4-banner.jpg)"
-      class="bg-cover bg-no-repeat bg-center relative z-10 after:absolute after:size-full after:inset-0 after:bg-[#073b4c] after:z-[-5] after:opacity-30"
+      class="bg-cover bg-no-repeat bg-center min-h-full relative z-10 after:absolute after:size-full after:inset-0 after:bg-[#073b4c] after:z-[-5] after:opacity-30"
     >
       <div class="container mx-auto">
         <div class="grid grid-cols-12 items-center py-4">
           <div class="col-start-1 col-end-2">
             <div>
-              <a href="#" class="text-[#ffffff]"
-                ><i class="fa-solid fa-bars"></i
-              ></a>
+              <button class="text-[#ffffff]" id="sidebar-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
             </div>
           </div>
           <div class="col-start-6 col-end-8">
@@ -41,9 +158,9 @@
           </div>
           <div class="col-start-12 col-end-13">
             <div>
-              <a href="#" class="text-[#ffffff]"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></a>
+              <button class="text-[#ffffff]">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -653,3 +770,24 @@
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
+
+<!-- 
+   <div
+              class="relative text-right z-50 data-[state=close]:transform data-[state=close]:scale-[-50] data-[state=close]:invisible"
+              id="home-page-4-menu-search"
+              data-state="close"
+            >
+              <input
+                type="text"
+                placeholder="Search here"
+                class="bg-[#0c3f50] focus:outline-none text-white py-4 ps-5 pe-11"
+              />
+              <button
+                type="submit"
+                class="text-white absolute right-[-130px] top-1/2 translate-y-[-50%]"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+-->
