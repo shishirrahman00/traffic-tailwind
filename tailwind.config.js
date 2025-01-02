@@ -18,6 +18,7 @@ module.exports = {
     "./contact-us-1.html",
     "./contact-us-2.html",
     "./team.html",
+    "./pricing-table.html",
   ],
   theme: {
     screens: {
