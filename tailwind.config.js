@@ -20,6 +20,8 @@ module.exports = {
     "./team.html",
     "./pricing-table.html",
     "./seo.html",
+    "./faq.html",
+    "./tabs.html",
   ],
   theme: {
     screens: {

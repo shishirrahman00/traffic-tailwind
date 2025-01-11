@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABS</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+  </head>
+  <body>
+    <div class="py-[120px]">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-start-1 col-end-13">
+            <h1 class="text-[22px] text-[#373737] font-bold mb-16 text-center">
+              TABS
+            </h1>
+
+            <div class="mb-24">
+              <div class="flex gap-[30px] mb-10">
+                <div class="tab-btn-list flex items-center gap-x-5">
+                  <button
+                    class="py-2 px-5 bg-red-300 rounded-full"
+                    data-value="tab-1"
+                  >
+                    Recent
+                  </button>
+                  <button data-value="tab-2">Popular</button>
+                  <button data-value="tab-3">Trending</button>
+                </div>
+              </div>
+
+              <div class="tab-contents">
+                <div class="tab-content border py-7 px-4" id="tab-1">
+                  <p class="text-[15px] text-[#999999] font-light">
+                    The few dust hits that were recorded sounded like the small
+                    pops caused by dust a LP record, he said. What he had
+                    expected was something more like the din of driving through
+                    Iowa in a hailstorm,” Dr. Kurth said. Since Cassini had not
+                    passed through this region before, scientists and engineers.
+                  </p>
+                </div>
+                <div class="tab-content border py-7 px-4 hidden" id="tab-2">
+                  <p class="text-[15px] text-[#999999] font-light">
+                    CONTENT NUMBER 2
+                  </p>
+                </div>
+                <div class="tab-content border py-7 px-4 hidden" id="tab-3">
+                  <p class="text-[15px] text-[#999999] font-light">
+                    CONTENT NUMBER 3
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-12">
+              <button
+                class="py-3 px-5 btn data-[click=false]:bg-transparent data-[click=true]:bg-red-400 data-[click=true]:font-bold"
+                data-click="false"
+              >
+                B
+              </button>
+              <button
+                class="py-3 px-5 btn data-[click=false]:bg-transparent data-[click=true]:bg-red-400 data-[click=true]:underline"
+                data-click="false"
+              >
+                U
+              </button>
+              <button
+                class="py-3 px-5 btn data-[click=false]:bg-transparent data-[click=true]:bg-red-400 data-[click=true]:italic"
+                data-click="false"
+              >
+                I
+              </button>
+            </div>
+
+            <div>
+              <button class="px-5 py-3 border border-[#e9e9e9] toast-btn">
+                Show Toast
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="items-center justify-between w-[400px] px-6 py-3 shadow-lg fixed right-12 bottom-12 hidden toast-wrapper"
+      >
+        <button class="toast-close absolute right-5 top-5 -translate-y-1/2">
+          <i class="fa fa-close"></i>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-start-1 col-end-13">
+            <div class="w-full h-4 bg-gray-200 rounded-full progress-item">
+              <div
+                class="w-[25%] h-4 rounded-full bg-blue-600 progress-bar"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
