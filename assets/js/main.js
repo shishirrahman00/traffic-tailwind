@@ -194,6 +194,8 @@ toastCloseBtn.addEventListener("click", (event) => {
   toastWrapper.classList.add("hidden");
 });
 
+const progressItem = document.querySelector(".progress-item");
+
 document.addEventListener("DOMContentLoaded", () => {
   const progressBar = document.querySelector(" .progress-item .progress-bar");
   let width = 25;
@@ -206,4 +208,122 @@ document.addEventListener("DOMContentLoaded", () => {
       progressBar.style.width = width + "%";
     }
   }, 20);
+});
+
+const comboBox = document.querySelector(".combo-box");
+const comboBoxBtn = document.querySelector(".combo-box-btn");
+const comboBoxList = comboBox.querySelector(".combo-box-list");
+const comboBoxSearch = comboBox.querySelector(".combo-box-search");
+const dataList = [
+  {
+    label: "Laravel",
+    value: "laravel",
+  },
+  {
+    label: "PHP",
+    value: "PHP",
+  },
+  {
+    label: "React",
+    value: "React",
+  },
+  {
+    label: "Next",
+    value: "Next",
+  },
+  {
+    label: "Mern",
+    value: "Mern",
+  },
+];
+
+comboBoxBtn.addEventListener("click", () => {
+  const value = comboBox.getAttribute("data-state") === "true";
+  comboBox.setAttribute("data-state", !value);
+
+  dataList.forEach((item) => {
+    const comboBoxListLi = document.createElement("li");
+    comboBoxListLi.setAttribute(
+      "class",
+      "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] cursor-pointer"
+    );
+    comboBoxListLi.innerHTML = item.label;
+    comboBoxList.appendChild(comboBoxListLi);
+  });
+});
+
+comboBoxSearch.addEventListener("input", (event) => {
+  const searchText = String(event.target.value);
+
+  if (searchText.trim() === "") {
+    comboBoxList.innerHTML = "";
+    dataList.forEach((item) => {
+      const comboBoxListLi = document.createElement("li");
+
+      comboBoxListLi.setAttribute(
+        "class",
+        "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] cursor-pointer"
+      );
+      comboBoxListLi.innerHTML = item.label;
+      comboBoxList.appendChild(comboBoxListLi);
+    });
+    return;
+  }
+
+  const filterdArray = dataList.filter((item) => {
+    if (item.value.toLowerCase().startsWith(searchText.toLowerCase())) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+
+  if (filterdArray.length) {
+    comboBoxList.innerHTML = "";
+    filterdArray.forEach((item) => {
+      const comboBoxListLi = document.createElement("li");
+
+      comboBoxListLi.setAttribute(
+        "class",
+        "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] cursor-pointer"
+      );
+      comboBoxListLi.innerHTML = item.label;
+      comboBoxList.appendChild(comboBoxListLi);
+    });
+  } else {
+    comboBoxList.innerHTML = "";
+    const comboBoxListLi = document.createElement("li");
+
+    comboBoxListLi.setAttribute(
+      "class",
+      "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] cursor-pointer"
+    );
+
+    comboBoxListLi.innerHTML = "No Option Found";
+    comboBoxList.appendChild(comboBoxListLi);
+  }
+});
+
+const form = document.querySelector("form");
+const formTodoTask = form.querySelector(".task");
+const todoList = document.querySelector(".Todo-list");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formTaskValue = formTodoTask.value;
+
+  if (formTaskValue === "") {
+    alert("no task added");
+  } else {
+    const todoListLi = document.createElement("li");
+    todoListLi.setAttribute(
+      "class",
+      "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] border-b cursor-pointer"
+    );
+    todoListLi.innerHTML = formTaskValue;
+    todoList.setAttribute("class", "border last:border-b-0");
+    todoList.appendChild(todoListLi);
+    formTodoTask.value = "";
+  }
 });
