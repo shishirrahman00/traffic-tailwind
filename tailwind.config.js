@@ -22,6 +22,7 @@ module.exports = {
     "./seo.html",
     "./faq.html",
     "./tabs.html",
+    "./header.html",
   ],
   theme: {
     screens: {

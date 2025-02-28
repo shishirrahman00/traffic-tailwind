@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div class="bg-slate-500 p-[30px]">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div>
+            <button class="text-[#ffffff]">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="./assets/img/Logo.png"
+                alt="logo"
+                class="w-14 h-11 cursor-pointer"
+            /></a>
+          </div>
+
+          <div class="search-box relative">
+            <button class="search-btn text-[#ffffff]" data-state="false">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div
+              class="w-[245px] absolute top-0 right-0 search-box-hover -translate-y-1/2 hidden"
+            >
+              <form action="">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="w-full bg-[#073b4c] text-white placeholder:text-white pl-5 pr-10 py-3 rounded border-[#073b4c] outline-none"
+                />
+                <button
+                  type="submit"
+                  class="absolute top-1/2 transform -translate-y-1/2 right-3 text-white"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="bg-slate-500 p-7">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12 items-center">
+          <div class="col-start-1 col-end-2">
+            <div>
+              <button class="text-[#ffffff]">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-start-6 col-end-8 justify-items-center">
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/img/Logo.png"
+                  alt="logo"
+                  class="w-14 h-11 cursor-pointer"
+              /></a>
+            </div>
+          </div>
+          <div class="col-start-10 col-end-13 justify-items-end">
+            <div class="group search-box text-end">
+              <button class="search-btn text-[#ffffff]" data-state="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+
+              <div class="w-[250px] relative search-box-hover hidden">
+                <form action="#">
+                  <input
+                    type="text"
+                    placeholder="Search here"
+                    class="w-full bg-[#073b4c] text-white placeholder:text-white pl-5 pr-10 py-2.5 rounded border-[#073b4c] outline-none"
+                  />
+                  <button
+                    class="absolute top-1/2 right-3 transform -translate-y-1/2 text-white"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center text-4xl text-black py-4">Another Navbar</h1>
+
+    <div class="bg-[#0c6aa1b9] py-7">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12 items-center">
+          <div class="col-start-1 col-end-3">
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/img/Logo.png"
+                  alt="logo"
+                  class="w-14 h-11 cursor-pointer"
+              /></a>
+            </div>
+          </div>
+          <div class="col-start-3 col-end-9">
+            <div class="header-menu">
+              <ul class="flex gap-x-[56px]">
+                <li>
+                  <a href="#" class="text-[20px] text-white font-medium">
+                    Products
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[20px] text-white font-medium">
+                    Buy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[20px] text-white font-medium">
+                    Service & Support
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[20px] text-white font-medium">
+                    About Haier</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-start-10 col-end-13 justify-items-end">
+            <div>
+              <button
+                class="search-icon text-[#ffffff] text-2xl"
+                data-open="false"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <div class="flex gap-x-[30px]">
+                <div class="relative w-[300px] search-hover hidden">
+                  <form action="#">
+                    <input
+                      type="text"
+                      placeholder="Search here"
+                      class="w-full bg-[#246CB1] text-white placeholder:text-white pl-5 pr-10 py-2.5 rounded border-[#073b4c] outline-none"
+                    />
+                    <button
+                      class="absolute top-1/2 right-3 transform -translate-y-1/2 text-white"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
+                <button class="text-[22px] text-white close-btn hidden">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/header.js"></script>
+  </body>
+</html>

@@ -91,6 +91,25 @@ if (sidebarMenuSearch) {
   });
 }
 
+const searchBox = document.querySelector(".search-box");
+const searchBtn = searchBox.querySelector(".search-btn");
+const searchBoxHover = searchBox.querySelector(".search-box-hover");
+
+searchBtn.addEventListener("click", (event) => {
+  const value = event.currentTarget.getAttribute("data-state");
+  if (value === "false") {
+    searchBtn.setAttribute("class", "hidden text-[#ffffff]");
+    searchBoxHover.classList.remove("hidden");
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!searchBox.contains(event.target)) {
+    searchBoxHover.classList.add("hidden");
+    searchBtn.classList.remove("hidden");
+  }
+});
+
 const accordianItems = document.querySelectorAll(".accordian-item");
 accordianItems.forEach((item) => {
   item.querySelector(".accordian-title").addEventListener("click", () => {
@@ -296,7 +315,7 @@ comboBoxSearch.addEventListener("input", (event) => {
 
     comboBoxListLi.setAttribute(
       "class",
-      "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] cursor-pointer"
+      "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] cursor-pointer "
     );
 
     comboBoxListLi.innerHTML = "No Option Found";
@@ -304,26 +323,39 @@ comboBoxSearch.addEventListener("input", (event) => {
   }
 });
 
-const form = document.querySelector("form");
+const form = document.querySelector(".todo-form");
 const formTodoTask = form.querySelector(".task");
-const todoList = document.querySelector(".Todo-list");
+const todoList = document.querySelector(".todo-list");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formTaskValue = formTodoTask.value;
-
   if (formTaskValue === "") {
-    alert("no task added");
-  } else {
-    const todoListLi = document.createElement("li");
-    todoListLi.setAttribute(
-      "class",
-      "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] border-b cursor-pointer"
-    );
-    todoListLi.innerHTML = formTaskValue;
-    todoList.setAttribute("class", "border last:border-b-0");
-    todoList.appendChild(todoListLi);
-    formTodoTask.value = "";
+    return;
   }
+
+  const todoListLi = document.createElement("li");
+  todoListLi.setAttribute(
+    "class",
+    "rounded-sm px-5 py-2 hover:bg-[#e9e9e9] border-b cursor-pointer flex items-center justify-between"
+  );
+  const todoListLiSpan = document.createElement("span");
+  const todoListLiRemove = document.createElement("button");
+  todoListLiRemove.setAttribute("data-id", new Date().getTime());
+  todoListLiRemove.setAttribute("class", "todo-remove-btn");
+  todoListLiRemove.innerHTML = "X";
+  todoListLiSpan.innerHTML = formTaskValue;
+  todoListLi.appendChild(todoListLiSpan);
+  todoListLi.appendChild(todoListLiRemove);
+  todoList.setAttribute("class", "border rounded-md last:border-b-0 ");
+  todoList.appendChild(todoListLi);
+  formTodoTask.value = "";
+});
+
+const todoListRemoveBtn = document.querySelector(".todo-remove-btn");
+console.log(todoListRemoveBtn);
+
+todoListRemoveBtn.addEventListener("click", (event) => {
+  event.preventDefault();
 });

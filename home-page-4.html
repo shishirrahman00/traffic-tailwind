@@ -17,7 +17,7 @@
   <body>
     <!-- HERO-AREA-SECTION-START -->
     <div
-      class="fixed inset-0 w-full h-full bg-[#0c3f50] bg-opacity-85 z-50 data-[state=close]:transform data-[state=close]:scale-75 data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform data-[state=open]:scale-100"
+      class="fixed inset-0 w-full h-full bg-[#0c3f50] bg-opacity-85 z-50 data-[state=close]:transform data-[state=close]:opacity-0 data-[state=close]:invisible transition-transform -translate-x-full data-[state=open]:translate-x-0 duration-500"
       id="home-page-4-sidebar"
       data-state="close"
     >
@@ -146,7 +146,7 @@
               </button>
             </div>
           </div>
-          <div class="col-start-6 col-end-8">
+          <div class="col-start-6 col-end-8 justify-items-center">
             <div>
               <a href="#"
                 ><img
@@ -156,30 +156,26 @@
               /></a>
             </div>
           </div>
-          <div class="col-start-12 col-end-13">
-            <div>
-              <button class="text-[#ffffff]" id="sidebar-menu-search">
+          <div class="col-start-10 col-end-13">
+            <div class="group search-box text-end">
+              <button class="search-btn text-[#ffffff]" data-state="false">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </div>
-            <div
-              class="relative text-left"
-              id="home-page-4-menu-search"
-              data-state="close"
-            >
-              <form action="">
-                <input
-                  type="text"
-                  placeholder="Search here"
-                  class="bg-[#0c3f50] focus:outline-none text-white w-full py-4 ps-5 -translate-x-6"
-                />
-                <button
-                  type="submit"
-                  class="text-white absolute right-0 top-1/2"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </form>
+
+              <div class="w-[250px] relative search-box-hover hidden">
+                <form action="#">
+                  <input
+                    type="text"
+                    placeholder="Search here"
+                    class="w-full bg-[#073b4c] text-white placeholder:text-white pl-5 pr-10 py-2.5 rounded border-[#073b4c] outline-none"
+                  />
+                  <button
+                    class="absolute top-1/2 right-3 transform -translate-y-1/2 text-white"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
