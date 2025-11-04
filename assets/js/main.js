@@ -1,3 +1,19 @@
+// HOME PAGE 1 START
+
+// const barButton = document.querySelector(".hamburger");
+// const sidebar = document.getElementById("mobileSidebar");
+// const closeSidebar = document.getElementById("closeSidebar");
+
+// barButton.addEventListener("click", () => {
+//   sidebar.classList.remove("-translate-x-full");
+// });
+
+// closeSidebar.addEventListener("click", () => {
+//   sidebar.classList.add("-translate-x-full");
+// });
+
+//  HOME PAGE 1 START END
+
 const testimonialSlider = document.querySelector(".testimonial-slider");
 const caseStudySlider = document.querySelector(".case-study-slider");
 const caseSliderElement = document.querySelector(".case-slider");
@@ -92,30 +108,22 @@ if (sidebarMenuSearch) {
 }
 
 const searchBox = document.querySelector(".search-box");
-const searchBtn = searchBox.querySelector(".search-btn");
-const searchBoxHover = searchBox.querySelector(".search-box-hover");
+// const searchBtn = searchBox.querySelector(".search-btn");
+// const searchBoxHover = searchBox.querySelector(".search-box-hover");
 
-searchBtn.addEventListener("click", (event) => {
-  const value = event.currentTarget.getAttribute("data-state");
-  if (value === "false") {
-    searchBtn.setAttribute("class", "hidden text-[#ffffff]");
-    searchBoxHover.classList.remove("hidden");
-  }
-});
+// searchBtn.addEventListener("click", (event) => {
+//   const value = event.currentTarget.getAttribute("data-state");
+//   if (value === "false") {
+//     searchBtn.setAttribute("class", "hidden text-[#ffffff]");
+//     searchBoxHover.classList.remove("hidden");
+//   }
+// });
 
 document.addEventListener("click", (event) => {
   if (!searchBox.contains(event.target)) {
     searchBoxHover.classList.add("hidden");
     searchBtn.classList.remove("hidden");
   }
-});
-
-const accordianItems = document.querySelectorAll(".accordian-item");
-accordianItems.forEach((item) => {
-  item.querySelector(".accordian-title").addEventListener("click", () => {
-    const value = item.getAttribute("data-open") === "true";
-    item.setAttribute("data-open", !value);
-  });
 });
 
 // const accordianItems = document.querySelectorAll(".accordian-item");
